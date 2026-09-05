@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Timezones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>⏰ World Clock</h1>
+            <p class="subtitle">Current Time Across Timezones</p>
+        </header>
+
+        <!-- Search & Filter -->
+        <div class="search-section">
+            <input type="text" id="searchInput" class="search-box" placeholder="🔍 Search timezone...">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="favorites">⭐ Favorites</button>
+                <button class="filter-btn" data-filter="major">🌍 Major Cities</button>
+            </div>
+        </div>
+
+        <!-- Add Timezone Section -->
+        <div class="add-timezone-section">
+            <select id="timezoneSelect" class="timezone-select">
+                <option value="">+ Add Timezone...</option>
+            </select>
+        </div>
+
+        <!-- Clocks Grid -->
+        <div class="clocks-grid" id="clocksGrid">
+            <!-- Clocks will be dynamically inserted here -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Click ⭐ to add to favorites | Double-click to remove timezone</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
